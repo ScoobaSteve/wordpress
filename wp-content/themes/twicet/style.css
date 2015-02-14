@@ -1,0 +1,976 @@
+/*  
+Theme Name: Twicet
+Theme URI: http://www.imagication.co.nz/
+Description: A Business & Portfolio Theme
+Version: 1.0
+Author: Christian "Kriesi" Budschedl
+*/
+ 
+
+/*Small reset*/
+body, ul, ol, h1,h2,h3,h4,h5,h6,form,li,p{
+	margin:0;
+	padding:0;
+}
+
+/*Structured layout mainpage*/
+
+
+body{
+	font-size:11.5px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+	line-height:21px;
+	position:relative;
+		}
+		
+.wrap_all{ /*only needed if using big background images like in theme 5*/
+	width:100%;
+	position:relative;
+	display:table;
+	}
+
+#top{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	}
+
+/*****************************
+1.) #head	
+/****************************/	
+	
+	#head{
+		height:128px;
+		position:relative;
+		z-index:10;
+		}
+		
+			.logo, .logo a{
+				display:block;
+				height:120px;
+				width:170px;
+				position:absolute;
+				left:8px;
+				top:14px;
+				}
+				
+					#top .logo a{
+						top:0;
+						right:0;
+						text-indent:-9999px;
+						outline:none;
+						}
+		
+/*****************************
+2.) #main
+/****************************/		
+			#main{
+			position:relative;
+			padding-top:45px;
+			float:left;
+			}
+			
+			
+/*****************************
+3.) #mainpage image slider
+/****************************/	
+
+				#featured{
+					height:365px;
+					margin-bottom:25px;
+					position:relative;
+					}
+				
+						.featured_item{
+							height:350px;
+							margin:0 auto;
+							position:relative;
+							top:-35px;
+							width:940px;
+							overflow:hidden;
+							display:none;
+						}
+						
+						#top .current{
+							display:block;
+							}
+							
+							
+							.featured_text {
+								letter-spacing:0.3px;
+								left:30px;
+								line-height:26px;
+								position:relative;
+								top:30px;
+								width:332px;
+								z-index:2;
+							}
+							
+									#featured .entry{
+									margin-bottom:8px;
+									height:242px;
+									overflow:hidden;
+									border-bottom:none;
+									padding-bottom:0;
+									}
+								
+							.featured_image{
+								height:350px;
+								position:absolute;
+								right:0;
+								top:0;
+								width:940px;
+								overflow:hidden;
+								}
+								
+							.featured_image img{
+								position:absolute;
+								right:0;
+								top:0;
+								}
+				
+					#featured_bottom{
+						position:absolute;
+						height:60px;
+						bottom:-10px;
+						width:100%;
+					}
+							
+							.ticker{
+								font-size:11px;
+								margin:18px 15px 0 39px;
+								width:450px;
+								}
+							
+							.ticker, .ticker a{
+								text-decoration:none;
+								}
+								
+							.ticker span{display:none;}
+							.ticker .active_ticker{display:block;}	
+								
+							.preview_images{
+								height:60px;
+								line-height:60px;
+								position:absolute;
+								right:39px;
+								top:10px;
+								}
+								
+							.preview_images a img{
+								padding:1px;
+								}
+								
+							.preview_images a{
+								outline:none;
+								display:block;
+								position:relative;
+								margin-right:5px;
+								float:left;
+								}
+								
+							.pointer{
+								height:13px;
+								left:18px;
+								position:absolute;
+								top:37px;
+								width:13px;
+								}
+								
+/*****************************
+4.) breadcrumb navigation
+/****************************/	
+								
+			
+			.breadcrumb{
+				font-size:11px;
+				left:40px;
+				position:absolute;
+				bottom:-49px;
+				z-index:5;
+				}
+				
+						.breadcrumb a{
+							text-decoration:none;
+							}
+							
+						.breadcrumb a:hover{
+							text-decoration:underline;
+							}
+/*****************************
+5.) content area below slider and on subpages
+/****************************/	
+						
+			.content_top{
+				height:30px;
+				}	
+				
+			#content{
+				float:left;
+				padding:0 10px;
+				position:relative;
+				width:940px;
+				}
+					
+					#sidebar{
+						float:left;
+						padding:0 0 15px 50px;
+						position:relative;
+						width:265px;
+						overflow:hidden;
+						}
+							
+								
+								#top #sidebar .small_box{
+									padding:0 0 15px 0;
+									}
+/*****************************
+6.) Portfolio Page (no sidebar)
+/****************************/	
+					#inner_content_big{
+						float:left;
+						width:880px;
+						padding:0 0 15px 30px;
+						position:relative;
+						}
+						
+							
+							.entry_portfolio{
+								padding-bottom:30px;
+								clear:both;
+								float:left;
+								width:100%;
+								position:relative;
+								}
+								
+								.entry_portfolio p{
+									font-style:italic;
+									}
+						
+							.portfolio_item{
+								height:132px;
+								overflow:hidden;
+								padding:5px;
+								position:relative;
+								width:250px;
+								}
+								
+							#top .portfolio_item h3{	
+								position:absolute;
+								bottom:13px;
+								left:0;
+								border:none;
+								padding:0;
+								margin:0;
+								line-height:1em;
+							}
+							
+							#top #main .portfolio_item h3 a{
+							padding:4px 8px;
+							font-size:12px;
+							display:inline;
+							height:auto;
+							width:auto;
+							overflow:auto;
+							}
+							
+							.portfolio_item a{
+								display:block;
+								overflow:hidden;
+								width:250px;
+								height:132px;
+								}
+							
+								
+							#top .portfolio_item img, #top .portfolio_item a img{
+								border:none;
+								padding:0 !important; /*ie 6 fix fix =)*/
+								margin:0;
+								}
+/*****************************
+7.)pages with sidebar
+/****************************/								
+					
+					#inner_content, .inner_content{
+						float:left;
+						width:570px;
+						padding:0 0 15px 30px;
+						position:relative;
+						}
+					
+					#top .portfolio_inner_content{
+					width:100%;
+					}
+						
+					#inner_content .entry{
+						width:570px;
+						}
+						
+								.entry{
+									clear:both;
+									margin-bottom:28px;
+									overflow:hidden;
+									padding-bottom:20px;
+									position:relative;
+									}
+									
+								.entry-head{
+									position:relative;
+									top:-3px;
+									margin-bottom:20px;
+									font-size:11px;
+									}
+									
+										
+										.categories, .comments, .entry-head a, .more-link, #top .portfolio_item h3 a{
+											text-decoration:none;
+											padding:2px 0;
+											}
+											
+											#top .entry-head a, .more-link{
+											padding:2px 4px;	
+												}
+	
+											
+											.date{
+												padding:2px 4px;
+												}
+									
+
+				
+					#subpage #content{
+						padding:20px 10px 0;
+						}
+						
+						
+/*****************************
+7.) Small Boxes and Sidebar "Widgets"
+/****************************/	
+				
+							.small_box{
+								float:left;
+								padding:0 0 15px 50px;
+								position:relative;
+								width:260px;
+								}
+						
+							#top .box1{
+								padding:0 0 15px 30px;
+								}
+							
+							.small_box h3{
+								margin:0 0 5px;
+								}
+		
+								
+							.small_box img{
+								padding:5px 0 !important;
+								padding:0;/*ie6 fix for png elemnts needs this*/
+								}
+								
+							.widget_categories a, .widget_pages a, .widget_archive a , .widget_recent_entries a, li.recentcomments, .widget_meta a{
+							padding:5px;
+							display:block;
+							text-decoration:none;
+							width:250px; /*change if sidebarwidth changes*/
+							}
+								
+						
+							
+							/* uncomment this if you want sublevels with indents
+							.small_box ul ul a{
+								padding-left:25px;
+								width:230px;
+								}
+								
+							.small_box ul ul ul a{
+								padding-left:45px;
+								width:210px;
+								}
+								
+							.small_box ul ul ul ul a{
+								padding-left:65px;
+								width:190px;
+								}
+							*/
+							
+							.widget_tag_cloud a{
+								text-decoration: none;
+								padding:0px 3px;
+							}
+							
+							.widget_tag_cloud a:hover{
+								text-decoration: underline;
+								font-weight: bold;	
+							}
+							
+							li.recentcomments a{
+							text-decoration: none;
+							}
+							
+							/*--------------------calendar--------------------*/
+							#wp-calendar a, #wp-calendar a:visited {
+							display:block;
+							text-decoration:none;
+							padding:0;
+							border:none;
+							width:auto;
+							}
+							
+							#wp-calendar a:hover{
+							display:block;
+							}
+							
+							
+							
+							
+							#wp-calendar {
+							empty-cells: show;
+							width:100%;
+							text-align:center;
+							
+							}
+							
+							#wp-calendar #next a,#wp-calendar #prev a {
+							text-decoration:none;
+							display:block;
+							border:none;
+							}
+							#wp-calendar #next a:hover,#wp-calendar #prev a:hover {
+							}
+							
+							#wp-calendar caption {
+							margin-bottom:5px;
+							}
+														
+				
+				
+			
+			
+		#footer{
+			clear:both;
+			padding:40px 15px;
+			position:relative;
+			font-size:10px;
+			width:930px;
+			float:left;
+			}
+		
+
+					
+				.copyright{
+					float:left;
+					display:block;
+					}
+					
+				.scroll-top{
+					float:right;
+					display:block;
+					}
+					
+				
+		
+
+/*****************************
+#Single page comments	
+/****************************/
+
+textarea {
+	width:538px;
+	padding:10px;
+	font: normal 12px 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+	}
+	
+#commentform{
+	padding-bottom:20px;
+	}
+	
+#top .commententry li, #top .commententry ul, #top .commententry ol{
+border:none;
+}
+
+#top .commentlist, #top .commentlist li {
+clear:both;
+position:relative;
+list-style-type:none;
+padding:10px 0px 0px 25px;
+background-image:none;
+margin-bottom:10px;
+	}
+	
+#respond{
+	clear:both;
+	margin:20px 0 0 0;
+	width:100%;
+	}
+	
+#comment, fieldset textarea{
+	height:150px;
+	padding:5px;
+	width:97%;
+	line-height:24px;
+	}
+#commentform p, fieldset p{
+	padding:2px 0;
+	clear:both;
+	}	
+	
+#commentform input{
+	padding:5px;
+	}
+	
+.commentlist li h3{
+	float:left;
+	}
+
+
+.commentlist .says{
+	display:none;
+	}
+
+.commentlist .avatar{
+border:1px solid #DDDDDD;
+left:-25px;
+padding:3px;
+position:absolute;
+top:14px;
+z-index:3;
+	}
+	
+.commentlist .commentmetadata{
+font-size:11px;	
+	}
+	
+.commentlist .commentmetadata a{
+	position:relative;
+	font-size: 10px;
+	color:#888;
+	text-decoration: none;
+	line-height: 10px;
+	top:-5px;
+	}
+	
+.reply{
+font-size:11px;
+left:-19px;
+position:absolute;
+top:53px;
+	}
+	
+.fn{
+	font-weight:bold;
+	font-style:normal;
+	font-size: 13px;
+	}
+	
+.fn a{
+text-decoration: none;
+}
+
+.reply a{
+	text-decoration:none;
+	}
+.reply a:hover{
+	text-decoration:underline;
+	}
+	
+.comment_nav{
+	float:left;
+	height:38px;
+	padding:0 0 15px 50px;
+	width:508px;
+	}
+	
+.comment_nav a{
+	text-decoration:none;
+	cursor:pointer;
+	}
+	
+.comment_next{float:right;}
+
+.comment_prev{float:left;}
+	
+	
+.commentlist .children{
+	padding-left:20px;
+	padding-bottom:0;
+	
+	}
+#top .children li{
+padding-right:0;
+
+}
+
+
+
+#top #cancel-comment-reply-link{
+float:right;
+height:26px;
+line-height:26px;
+margin-right:1px;
+position:relative;
+right:14px;
+text-decoration:none;
+	}
+	
+.advancedlink{
+	line-height:28px;
+	}
+
+.fullwidth{
+	width:558px;
+	}
+	
+	
+	
+/* ---------------------- Pagination -------------------*/
+
+.pagination{
+clear:both;
+display:block;
+float:left;
+padding:0 0 20px 0px;
+position:relative;
+z-index:3;
+}
+.pagination span, .pagination a{
+display:block;
+float:left;
+font-size:11px;
+line-height:13px;
+margin: 2px 2px 2px 0;
+display:block;
+padding:3px 6px;
+text-decoration:none;
+}
+
+.pagination .current{
+font-size:11px;
+padding:3px 6px;
+}
+
+/*****************************
+#basic & common styles	
+/****************************/
+
+h1 a, h2 a, h3 a, h4 a, h5 a h6 a{
+		}
+
+a{
+		text-decoration:underline;
+	}
+
+a:hover{
+		text-decoration:none;
+	}
+	
+a img{
+	border:none;
+	}
+	
+p{ padding: 0 0 1em 0}
+
+
+ul, ol{
+	list-style-position:outside;
+	margin-left:20px;
+	}
+	
+#sidebar ul, #sidebar ol{
+	margin-left:0px;
+	}
+	
+#sidebar li{
+	list-style-type:none;	
+		}
+	
+
+h1,h2,h3,h4,h5,h6, legend{
+	font-weight:normal;
+	padding-bottom:5px;
+	line-height:1.4em;
+		}
+	
+	h1{clear:both; font-size:32px;font-weight:bold;}
+	h2{font-size:22px; clear:both;}
+	h3, legend{font-size:18px; clear:both;}
+	h4{font-size:16px; clear:both;}
+	h5{font-size:14px; clear:both;}
+	h6{font-size:13px; clear:both;}
+	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+		text-decoration:none;
+		} 
+		
+	
+		
+		
+	#featured h2{
+		margin-bottom:8px;
+		padding-bottom:8px;
+		}	
+		
+	#inner_content h2, #inner_content h2 a, #inner_content_big h2, #inner_content_big h2 a{
+		font-size:32px;
+				}
+
+	blockquote p{
+	padding:11px 0px;
+	}
+	
+	blockquote{
+	margin:0 0 22px 5px;
+	padding:0 15px;
+		}
+	
+.floatleft{
+	float:left;
+	}
+
+.floatright{
+	float:right;
+	}
+	
+.clearboth{
+	clear:both;
+	}
+	
+.alignleft{
+float:left;
+margin:0px 15px 15px 0pt;
+}
+
+.alignright{
+float:right;
+margin:0px 0pt 15px 15px;
+}
+
+.aligncenter{
+clear:both;
+display:block;
+margin:10px auto;
+padding: 10px 0;
+}
+
+#top .wp-smiley{
+	border:none;
+	padding:0;
+	}
+	
+.meta{
+	display:block;
+	position:relative;
+	top:3px;
+		font-size:11px;
+	line-height:14px;
+	min-height:14px;
+	}
+	
+.read-more, .show-next{
+			display:block;
+	font-size:11px;
+	font-weight:bold;
+	height:41px;
+	left:-2px;
+	line-height:41px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	width:165px;
+	}
+	
+#top .show-next{
+	bottom:0;
+	left:165px;
+	position:absolute;
+	}
+	
+.read-more:hover, .show-next:hover{
+			}
+	
+.entry ul, .entry ol{
+	list-style-type:disc;
+	list-style-position:inside;
+	margin:0;
+	padding:0 0 20px 0;
+	}
+	
+#top .entry ol{
+	list-style-type:decimal;
+	}
+	
+.entry li{
+	padding:3px 10px;
+	}
+	
+blockquote{
+			font-size:13px;
+	font-style:italic;
+	margin:0 0 20px;
+	padding:10px 20px 10px 41px;
+	}
+	
+	
+/*CONTACT FORM*/	
+
+
+
+#searchsubmit, #send, #top #submit{
+	cursor:pointer;
+	}
+	
+	
+#s, .text_input, .text_area{
+padding:5px;
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+width:200px;
+font-size:11.5px;
+}
+
+#sidebar #s{
+width:155px !important; /*ie6fix*/
+width:125px;
+}
+
+#top #searchsubmit, #top  #send, #top  #submit{
+padding:4px 20px;
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;
+font-size:11.5px;
+}
+
+.hidden{
+	display:none;
+	}
+#commentform{
+	padding-bottom:20px;
+	}
+
+
+fieldset{
+border:none;
+padding:0;
+margin:0;
+overflow:hidden;
+}
+
+fieldset label{
+	padding-left:7px;
+	}
+.blocklabel{
+	display:block;
+	padding:10px 0 0 0;
+}
+
+#top .text_area{
+	width:450px;
+	}
+	
+.corner_left, .corner_right{
+	position:absolute;
+	top:0;
+	height:5px;
+	width:5px;
+	z-index:6;
+	left:0;
+		}
+	
+#top .corner_right{
+	left:935px;
+		}
+	
+/*navigation*/
+
+.navwrap{
+		height:50px;
+	right:2px;
+	line-height:50px;
+	padding-right:18px;
+	position:absolute;
+	top:68px;
+	font-size:12px;
+	z-index:6;
+	}
+
+#top #nav{
+	float:left;
+	height:50px;
+	line-height:50px;
+		padding-left:4px;
+}
+
+
+#nav, #nav ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	line-height:50px; 
+	z-index:5;
+
+}
+
+
+#top #nav a{
+	height:33px;
+	display:block;
+	padding:0 19px;
+	text-decoration:none;
+	text-align:center;
+	line-height:28px; 
+	outline:none;
+	z-index:35;
+	position:relative;
+	float:left;
+	}
+
+#top #nav ul a{
+	line-height:33px; 
+}
+
+#top #nav li{
+	float:left;
+	position:relative;
+	z-index:20;
+	margin-top:11px;
+}
+
+#top #nav li li{
+	border-left:none;
+	margin-top:0;
+}
+
+#top #nav ul {
+	position:absolute;
+	display:none;
+	width:172px;
+	top:33px;
+	left:-1px;
+
+}
+
+#top #nav li ul a{
+	width:130px;
+	height:auto;
+	float:left;
+	text-align:left;
+	padding:0 21px;
+}
+
+#top #nav ul ul{
+	top:auto;
+	border-top:none;
+}	
+
+#top #nav li ul ul {
+	left:172px;
+	top:0px;
+}
+
+#top #nav li:hover ul ul, #top #nav li:hover ul ul ul,#top  #nav li:hover ul ul ul ul{
+  	display:none;	
+}
+#top #nav li:hover ul, #top #nav li li:hover ul, #top #nav li li li:hover ul, #top #nav li li li li:hover ul{
+	display:block;
+}
+

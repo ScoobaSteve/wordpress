@@ -1,0 +1,373 @@
+/*  
+Theme Name: Twicet
+Theme URI: http://www.imagication.co.nz/
+Description: A Business & Portfolio Theme
+Version: 1
+Author: Christian "Kriesi" Budschedl
+*/
+
+html{
+	background-color:#eaeaea;
+	}
+
+body{
+	color:#666;
+	}
+
+/*****************************
+1.) #head	
+/****************************/	
+	
+				
+					#top .logo a{
+						background:transparent url(../images/logo.png) left top no-repeat;
+						}
+		
+/*****************************
+2.) #main
+/****************************/		
+			#main{
+			background:transparent url(../images/bg_slice.png) left top no-repeat;
+			}
+			
+			
+/*****************************
+3.) #mainpage image slider
+/****************************/	
+
+				#featured{
+					background:transparent url(../images/bg_slice.png) center top repeat-y;
+					color:#f5f5f5;
+				}
+				
+						
+					#featured_bottom{
+						background:transparent url(../images/bg_slice2.png) right top no-repeat;	
+				
+					}
+							
+							.ticker, .ticker a{
+								color:#666;
+								text-decoration:none;
+								}
+							
+								
+							.preview_images a img{
+								border:1px solid #afafaf;
+								background-color:#fff;
+								}
+								
+							.preview_images .current_prev img{
+								border:1px solid #666;
+								}
+								
+							
+								
+							.pointer{
+								background:transparent url(../images/pointer.png) no-repeat scroll left top;
+								}
+								
+/*****************************
+4.) breadcrumb navigation
+/****************************/	
+								
+			
+			.breadcrumb{
+				color:#ddd;
+				}
+				
+						.breadcrumb a{
+							text-decoration:none;
+							color:#fff;
+							}
+							
+						.breadcrumb a:hover{
+							text-decoration:underline;
+							color:#fff;
+							}
+/*****************************
+5.) content area below slider and on subpages
+/****************************/	
+						
+			.content_top{
+				background:transparent url(../images/bg_slice2.png) left top no-repeat;
+				}	
+				
+			#content{
+				background:transparent url(../images/bg_slice2.png) repeat-y scroll center top;
+				}
+				
+/*****************************
+6.) Portfolio Page (no sidebar)
+/****************************/	
+					
+						
+							.portfolio_item{
+								border:1px solid #ddd;
+								}
+								
+							
+							
+/*****************************
+7.)pages with sidebar
+/****************************/								
+					
+				
+						
+								.entry{
+									border-bottom:1px solid #bbb;
+									}
+									
+									
+										
+										.categories, .comments, .entry-head a, .more-link, #top .portfolio_item h3 a{
+											background-color:#747474;
+											color:#eee;
+											}
+											
+											
+											.entry-head a:hover, .more-link:hover, #top .portfolio_item h3 a:hover{
+											background-color:#eaeaea;
+											color:#747474;
+											}
+											
+										
+								
+					
+					
+				
+					#top .bg_sidebar{
+						background:transparent url(../images/bg_sidebar.png) repeat-y scroll center top;
+						}
+				
+				
+						
+						
+/*****************************
+7.) Small Boxes and Sidebar "Widgets"
+/****************************/	
+				
+							
+							.small_box h3{
+								border-bottom:1px solid #DDD;
+								}
+		
+								
+							.small_box img{
+								border-top:1px solid #DDD;
+								border-bottom:1px solid #DDD;
+								}
+								
+							.widget_categories a, .widget_pages a, .widget_archive a , .widget_recent_entries a, li.recentcomments, .widget_meta a{
+							border-bottom:1px solid #ddd;
+							}
+								
+								
+							.widget_categories a:hover, .widget_pages a:hover, .widget_archive a:hover,  .widget_recent_entries a:hover, li.recentcomments:hover, .widget_meta a:hover{
+							background:#f5f5f5;	
+							}
+							
+							#wp-calendar th, #prev a, #next a{
+							background-color:#282828;
+							color:#fff;
+							}
+							
+				
+		#footer{
+	
+			background:transparent url(../images/bg_slice.png) right -20px no-repeat;
+			color:#888;
+			}
+		
+				#footer a{
+					color:#666;
+					}
+					
+				
+				
+		
+
+
+
+
+/*****************************
+#basic & common styles	
+/****************************/
+
+h1 a, h2 a, h3 a, h4 a, h5 a h6 a{
+	color:#5B5A5A;
+	}
+
+a{
+	color:#333;
+	text-decoration:underline;
+	}
+
+a:hover{
+	color:#444;
+	text-decoration:none;
+	}
+	
+
+
+h1,h2,h3,h4,h5,h6, legend{
+	color:#5b5a5a;
+	}
+
+	#featured h2, #featured h2 a{
+		color:#fff;
+		}
+		
+		
+	#featured h2{
+		border-bottom:1px solid #ddd;
+		}	
+		
+	#inner_content h2, #inner_content h2 a, #inner_content_big h2, #inner_content_big h2 a{
+		color:#3d3d3d;
+		}
+
+
+.aligncenter{
+border-bottom:1px solid #ddd;
+border-top:1px solid #ddd;
+}
+
+.meta{
+	color:#a0a0a0;
+	}
+	
+.read-more, .show-next{
+	background:transparent url(../images/read_more.png) no-repeat scroll right top;
+	color:#555;
+	}
+	
+	
+.read-more:hover, .show-next:hover{
+	background:transparent url(../images/read_more.png) no-repeat scroll right bottom;
+	color:#666;
+	}
+	
+.entry ul, .entry ol{
+
+	border-top:1px solid #ddd;
+	}
+	
+	
+.entry li{
+	border-bottom:1px solid #ddd;
+	}
+	
+blockquote{
+	background:transparent url(../images/quotes.png) no-repeat scroll left 6px;
+	color:#555555;
+	}
+	
+	
+/*CONTACT FORM*/	
+.valid .text_input, .valid .text_area{border:1px solid #70A41B;} /*#70A41B*/
+.error .text_input, .error .text_area{border:1px solid #EE2A00;}
+.ajax_alert .text_input, .ajax_alert .text_area{border:1px solid #ffb628;}
+
+
+#s, .text_input, .text_area, textarea, #commentform input{
+	border:1px solid #ababab;
+	color:#333;
+	}
+
+
+#searchsubmit, #send, #top #submit{
+	border:1px solid #ababab;
+	background-color:#333;
+	cursor:pointer;
+	color:#fff;
+	
+	}
+	
+#searchsubmit:hover, #send:hover, #top #submit:hover{
+	background-color:#999;
+	color:#333;
+	}
+
+	
+.corner_left, .corner_right{
+	background:transparent url(../images/jquery_corners.png) no-repeat scroll top left;
+	}
+	
+#top .corner_right{
+	background:transparent url(../images/jquery_corners.png) no-repeat scroll top right;
+	}
+	
+/*navigation*/
+
+.navwrap{
+	background:transparent url(../images/menu.png) no-repeat scroll right bottom;
+	}
+
+#top #nav{
+	background:transparent url(../images/menu.png) left top no-repeat;
+}
+
+
+
+
+
+/*naviagation*/
+#top #nav a{
+	color:#3a2f28;
+}
+
+#top #nav ul {
+	border:1px solid #DFDFDF;
+	border-top:none;
+}
+
+#top #nav li ul a{
+	border-bottom:1px solid #fff;
+	border-top:1px solid #DFDFDF;
+}
+
+#top #head #nav ul a, #top #head #nav ul li{
+	background-color:#f5f5f5;
+	background-image:none;
+}
+
+#top #head #nav ul a:hover, #top #head #nav ul a:focus {
+	background-color:#fff;
+	color:#baada5;
+}
+
+#top #head #nav a:hover, #top #head #nav a:focus {
+	color:#baada5;
+}
+
+
+#top #nav .current_page_item a{
+	color:#baada5;
+}
+
+#top #nav .current_page_parent .current_page_item a, #top #nav .current_page_item ul a{
+	border-right:1px solid #f5f5f5;
+	border-left:none;
+	background-image:none;
+	color:#444;
+}
+
+/* ---------------------- Pagination -------------------*/
+
+.pagination span, .pagination a{
+	border:1px solid #333;
+	color:#fff;
+	background-color:#999;
+}
+
+.pagination a:hover{
+	border:1px solid #333;
+	color:#fff;
+	background:#747474;
+}
+.pagination .current{
+	border:1px solid #333;
+	color:#fff;
+	background-color:#747474;
+}

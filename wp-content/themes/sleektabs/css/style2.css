@@ -1,0 +1,235 @@
+body{
+background:url(../images2/bg.jpg);
+}
+
+#wrapper-bgonly{
+	background:url(../images2/bg-top.jpg) repeat-x;
+	}
+
+#top{
+	background:transparent url(../images2/head.jpg) no-repeat;
+	}
+	
+#wrapper{
+	background:transparent url(../images2/bg_body.gif) repeat-y;
+	}
+
+#footer{
+	background:transparent url(../images2/footer.jpg);
+	}
+
+#logo {
+	background: transparent url(../images2/logo.jpg);
+	}
+	
+a{
+	color:#181510;
+	text-decoration:underline;
+	}
+	
+a:hover{
+	text-decoration:none;
+	}
+	
+h1,h2,h3,h4,h5,h6{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}	
+	
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, body, #wrapper #nav a, #wrapper #nav li ul a, a:hover{
+color:#4a3f26;	
+	}
+	
+.meta, .meta a{
+color:#a2916e;	
+	}
+	
+
+/*#navigation colors:*/
+#wrapper-bgonly #wrapper #nav li ul ul {
+left:170px;
+top:0;
+}
+#wrapper-bgonly #wrapper #nav ul {
+top:27px;
+}
+
+#wrapper #nav, #wrapper #nav ul {
+line-height:25px;}
+
+#wrapper-bgonly #wrapper #nav {
+top:21px;
+}
+
+#wrapper #nav a{
+background: transparent url(../images2/menu_bg.jpg) repeat-x bottom;
+color:#666;
+}
+
+#wrapper #nav li ul a{
+background-color:#dbd7cb;
+background-image:none;
+}
+
+#wrapper #nav li ul a:hover, #wrapper #nav li ul a:focus{
+background-color:#4A3F26;
+color:#fff;
+}
+#wrapper #nav a:hover, #wrapper #nav .current_page_item a, #wrapper #nav .current-cat a, #wrapper #nav .current-tab{
+color:#4A3F26;
+outline:none;
+	}
+
+.meta_date, .meta_cat{
+	border-right:1px solid #a2916e;
+	}
+	
+
+/*sidebar*/
+
+.widget{
+background: transparent url(../images2/sidebar_seperator.jpg) bottom left no-repeat;
+	}
+	
+.icon1{
+background: transparent url(../images2/icon1.jpg);
+	}
+
+.icon2{
+background: transparent url(../images2/icon2.jpg);
+	}
+	
+.widget a,.widget a:visited,#top .recentcomments,#top .widget_archive li,#top .widget_categories li,.commentlist li {
+border-bottom:1px solid #A2916E;
+}
+
+.widget a:hover, #top #wp-calendar a:hover,#top #wp-calendar a:hover{
+	background-color:#E8D9B9;
+	color:#4A3F26;
+	}
+
+#wp-calendar th,#wp-calendar a, #wp-calendar a:visited {
+background-color:#FFF; 
+}
+	
+#s, .text_input, .text_area, .ajaxstyle input, .ajaxstyle textarea{
+	border:1px solid #A2916E;
+	color:#4A3F26;
+	}
+
+
+#searchsubmit, #send, #submit{
+	border:1px solid #A2916E;
+	background-color:#fff;
+	cursor:pointer;
+	color:#4A3F26;
+	}
+#searchsubmit:hover, #send:hover, #submit:hover {
+	background-color:#4A3F26;
+	color:#fff;
+	}
+	
+.more-link{
+	background: transparent url(../images2/arrow.png) right 6px no-repeat;
+	}
+	
+.more-link:hover{
+	color:#5c4b28;
+	}
+	
+.entry_content img, .entry_content img a{
+background-color:#A2916E;
+}
+	
+.entry_content blockquote cite, .entry_content blockquote cite a{
+	color:#5c4b28;
+	}
+	
+.entry_content blockquote{
+	border-left:3px solid #666;
+	color:#666;
+	}
+	
+/*Pagination*/
+
+
+.pagination span, .pagination a{
+	border:1px solid #222;
+	color:#e8e8e8;
+	background-color:#333;
+}
+
+.pagination a:hover{
+	border:1px solid #333;
+	color:#333;
+	background-color:#e8e8e8;
+}
+.pagination .current{
+	border:1px solid #333;
+	background-color:#5c4b28;
+	color:#fff;
+}
+
+
+/*COMMENTS*/
+.admincomment {
+background-color:#e8d9b9;
+}
+
+
+#top .commentlist{
+border-top: 1px solid #A2916E;
+}
+
+.commentlist li{
+border-bottom:1px solid #A2916E;
+}
+.trackback_list li a{
+color:#333;
+}
+
+#commentform small {
+color:#333;
+}
+	
+.gravatar img{
+background-color:#A2916E;
+border:1px solid #4A3F26;
+}	
+
+.ajaxloader{
+	background:transparent url(../images2/ajax-loader.gif) right top no-repeat;
+	}
+	
+.ajaxloader_white{
+	background:#fff url(../images2/ajax-loader-white.gif) right bottom no-repeat;
+	}
+	
+.ajaxloader_content{
+	color:#a2916e;
+	}
+	
+#top .invalid-form{
+	border:2px solid #900;
+	margin:0;
+	}
+	
+.ajaxerror{
+	border:2px solid #990000;
+color:#333333;
+display:none;
+font-size:9px;
+margin:0 0 10px;
+padding:5px;
+	}
+
+#wrapper .entry_content .noborder{
+	border:none;
+	}
+	
+#wrapper .entry_content img, #wrapper .entry_content img a {
+border:1px solid #4A3F26;
+}
+
+hr, .seperator{
+	background:transparent url(../images2/hr.gif) 0 0 no-repeat;
+	}
